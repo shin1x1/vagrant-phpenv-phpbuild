@@ -1,0 +1,15 @@
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
+set fileencodings=ucs-bom,euc-jp,cp932,iso-2022-jp
+set fileencodings+=,ucs-2le,ucs-2,utf-8
+set expandtab
+set incsearch
+set hlsearch
+set wildmenu
+set cindent
+set hidden
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set showtabline=2
