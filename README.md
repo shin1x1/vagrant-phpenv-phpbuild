@@ -8,7 +8,7 @@ nginx + php-fpm を別ポートで起動させるので、同じ PHP ファイ�
 
 ## インストール方法
 
-### 1. <a href="https://www.virtualbox.org/">VitualBox</a> インストール
+### 1. <a href="https://www.virtualbox.org/">VirtualBox</a> インストール
 
   2013/07/01 時点での最新版 4.2.14 は、Vagrant からの起動で問題が発生しているので、4.2.8 or 4.2.12 の前バージョンをお勧めします。
 
