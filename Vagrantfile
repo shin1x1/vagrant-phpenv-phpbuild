@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
 
   #config.omnibus.chef_version = "11.4.0"
 
-  config.vm.synced_folder "./public_html", "/public_html", :create => true, :owner=> 'vagrant', :group=>'vagrant', :extra => 'dmode=777,fmode=666'
+  config.vm.synced_folder "./public_html", "/public_html", :create => true, :owner=> 'vagrant', :group=>'vagrant', :mount_options => ['dmode=777,fmode=666']
 
   config.vm.provider :virtualbox do |vb|
     #vb.customize ["modifyvm", :id, "--memory", 1024]
