@@ -47,10 +47,19 @@ node[:php].each do |php|
       :port => php["fpm_port"]
     )
   end
-  execute "Start php-fpm " + version do
-    command "#{phpdir}/sbin/php-fpm"
-    not_if { system "ps auxwww | grep [p]hp-fpm | grep #{version}" }
-  end
+end
+
+package "supervisor" do
+  action :install
+end
+template "/etc/supervisord.conf" do
+  source "supervisord.conf.erb"
+  variables(
+    :php => node['php']
+  )
+end
+service "supervisord" do
+  action [:start, :enable]
 end
 
 execute "Set phpenv global" do
