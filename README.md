@@ -2,7 +2,7 @@
 
 Vagrant / Chef files for PHP Server(phpenv and phpbuild, nginx)
 
-phpenv + php-build 環境を CentOS6.4 上に構築します。デフォルトでは PHP5.3.26 / PHP5.4.16 / PHP5.5.0 が入ります。
+phpenv + php-build 環境を CentOS6.4 上に構築します。デフォルトでは PHP5.3 / PHP5.4 / PHP5.5 が入ります。
 
 nginx + php-fpm を別ポートで起動させるので、同じ PHP ファイルを、それぞれの PHP 上で動作させることができます。
 
