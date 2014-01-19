@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
     chef.add_recipe "base"
     chef.add_recipe "phpenv_phpbuild"
     chef.json = {
-      :php_global_version => "5.5.0",
+      :php_global_version => "5.5.8",
       :php_configure_options => "",
       :php => [
         {
@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
           :http_port => "8054"
         },
         {
-          :version => "5.5.0",
+          :version => "5.5.8",
           :ini_file => "55",
           :fpm_port => "9055",
           :http_port => "8055"
