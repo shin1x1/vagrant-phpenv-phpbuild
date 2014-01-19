@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
       :php_configure_options => "",
       :php => [
         {
-          :version => "5.3.26",
+          :version => "5.3.28",
           :ini_file => "53",
           :fpm_port => "9053",
           :http_port => "8053"
