@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
           :http_port => "8053"
         },
         {
-          :version => "5.4.16",
+          :version => "5.4.24",
           :ini_file => "54",
           :fpm_port => "9054",
           :http_port => "8054"
